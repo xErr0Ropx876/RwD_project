@@ -11,6 +11,9 @@
   "keywords": ["study", "notes", "exam-prep"],
   "author": "",
   "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "bcryptjs": "^2.4.3",
