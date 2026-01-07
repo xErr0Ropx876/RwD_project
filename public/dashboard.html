@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - StudyHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span class="logo-text">StudyHub</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/collections.html">Collections</a></li>
+                <li class="user-links">
+                    <a href="/dashboard.html" class="active">Dashboard</a>
+                    <button class="btn-secondary logout-btn">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Dashboard</h1>
+                <p>Track your saved collections and resources</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- Saved Collections -->
+                <div class="dashboard-section">
+                    <h2 class="section-title">Saved Collections</h2>
+                    <div class="collections-grid" id="saved-collections">
+                        <div class="loading">Loading...</div>
+                    </div>
+                </div>
+
+                <!-- Saved Resources -->
+                <div class="dashboard-section">
+                    <h2 class="section-title">Saved Resources</h2>
+                    <div class="resources-list" id="saved-resources">
+                        <div class="loading">Loading...</div>
+                    </div>
+                </div>
+
+                <!-- Recently Viewed -->
+                <div class="dashboard-section">
+                    <h2 class="section-title">Recently Viewed</h2>
+                    <div class="resources-list" id="recent-resources">
+                        <div class="loading">Loading...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 StudyHub. Made for students, by students.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

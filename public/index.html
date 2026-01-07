@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Your Learning Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span class="logo-text">StudyHub</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/collections.html">Collections</a></li>
+                <li class="auth-links">
+                    <a href="/login.html" class="btn-secondary">Login</a>
+                    <a href="/signup.html" class="btn-primary">Sign Up</a>
+                </li>
+                <li class="user-links" style="display: none;">
+                    <a href="/dashboard.html">Dashboard</a>
+                    <button class="btn-secondary logout-btn">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Master Your Exams with<br>Quality Study Resources</h1>
+                    <p class="hero-subtitle">Access comprehensive notes, PDFs, and question banks curated for your academic success</p>
+                    <div class="hero-cta">
+                        <a href="/collections.html" class="btn-primary btn-large">Browse Collections</a>
+                        <a href="/signup.html" class="btn-secondary btn-large">Start Exam Prep</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Collections -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Popular Collections</h2>
+                    <a href="/collections.html" class="section-link">View all →</a>
+                </div>
+                <div class="collections-grid" id="popular-collections">
+                    <!-- Collections will be loaded here -->
+                    <div class="loading">Loading collections...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Resources -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Trending Resources</h2>
+                </div>
+                <div class="resources-grid" id="trending-resources">
+                    <!-- Resources will be loaded here -->
+                    <div class="loading">Loading resources...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title center">Why Choose StudyHub?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Comprehensive Notes</h3>
+                        <p>Access well-organized study materials for all subjects and semesters</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Question Banks</h3>
+                        <p>Practice with curated question sets and previous year papers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h3>Save & Track</h3>
+                        <p>Bookmark your favorite resources and track your progress</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 StudyHub. Made for students, by students.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

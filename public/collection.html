@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection - StudyHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span class="logo-text">StudyHub</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/collections.html">Collections</a></li>
+                <li class="auth-links">
+                    <a href="/login.html" class="btn-secondary">Login</a>
+                    <a href="/signup.html" class="btn-primary">Sign Up</a>
+                </li>
+                <li class="user-links" style="display: none;">
+                    <a href="/dashboard.html">Dashboard</a>
+                    <button class="btn-secondary logout-btn">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <a href="/collections.html" class="back-link">← Back to Collections</a>
+                
+                <div id="collection-detail" class="collection-detail">
+                    <div class="loading">Loading collection...</div>
+                </div>
+
+                <div id="resources-section" style="display: none;">
+                    <h2 class="section-title">Resources</h2>
+                    <div class="resources-list" id="resources-list">
+                        <!-- Resources will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 StudyHub. Made for students, by students.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/collection.js"></script>
+</body>
+</html>
